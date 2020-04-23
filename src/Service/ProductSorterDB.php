@@ -25,11 +25,9 @@ class ProductSorterDB implements StrategyInterface
         $productRepository = $this->entityManager->getRepository(\App\Entity\Product::class);
 
         $productSource = $repository->findAll();
-
         if (empty($productSource)) {
             return [];
         }
-
 
         $stack = new SplStack();
 
