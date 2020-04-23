@@ -7,6 +7,7 @@
 2. employee[id, name, post] project[id, title, description, employee_id]
 
 3. Сам проект
+cp .env .env.local
 docker-compose up -d --build
 php bin/console doctrine:migrations:migrate
 php bin/console doctrine:fixtures:load
